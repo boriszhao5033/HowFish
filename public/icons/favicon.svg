@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="HowFish">
+  <defs>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#12658F"/>
+      <stop offset="0.5" stop-color="#0B4F71"/>
+      <stop offset="1" stop-color="#06364E"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#ocean)"/>
+  <g fill="#EAF6FB">
+    <ellipse cx="34.88" cy="32" rx="16.32" ry="9.6"/>
+    <polygon points="21.12,32 8.32,21.12 8.32,42.88"/>
+    <polygon points="28.16,24.64 38.4,25.28 32,17.28"/>
+    <polygon points="28.16,39.36 36.48,38.72 31.36,46.08"/>
+  </g>
+  <circle cx="45.12" cy="29.76" r="1.792" fill="#0B4F71"/>
+</svg>

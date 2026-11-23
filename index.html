@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html lang="zh-CN" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0B4F71" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="HowFish" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="中澳海产俗称、学名、时令与食用安全的离线速查图鉴" />
+    <title>HowFish · 离线海产速查图鉴</title>
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('howfish-theme');
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = stored ? stored === 'dark' : Boolean(prefersDark);
+          if (dark) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (error) {
+          /* theme preference is best-effort */
+        }
+      })();
+    </script>
+  </head>
+  <body class="h-full">
+    <div id="root"></div>
+    <noscript>HowFish 需要启用 JavaScript 才能离线速查。</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

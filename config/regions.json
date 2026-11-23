@@ -1,0 +1,36 @@
+{
+  "regions": {
+    "au": {
+      "label": "澳洲市场",
+      "hemisphere": "south",
+      "season_group": "au",
+      "price_group": "au",
+      "enabled": true
+    },
+    "cn_north": {
+      "label": "中国北方",
+      "hemisphere": "north",
+      "season_group": "cn",
+      "price_group": "cn",
+      "enabled": true
+    },
+    "cn_east": {
+      "label": "江浙沪",
+      "hemisphere": "north",
+      "season_group": "cn",
+      "price_group": "cn",
+      "enabled": true
+    },
+    "cn_south": {
+      "label": "闽粤港台",
+      "hemisphere": "north",
+      "season_group": "cn",
+      "price_group": "cn",
+      "enabled": true
+    }
+  },
+  "season_groups": {
+    "au": { "label": "澳洲（南半球）", "hemisphere": "south" },
+    "cn": { "label": "中国（北半球）", "hemisphere": "north" }
+  }
+}
